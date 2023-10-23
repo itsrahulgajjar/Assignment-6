@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Image Upload</title>
+</head>
+<body>
+    <h1>Upload an Image</h1>
+    <form method="POST" enctype="multipart/form-data" action="/predict">
+        <input type="file" name="file" accept=".png, .jpg, .jpeg">
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('/medical-banner-with-doctor-holding-stethoscope.jpg');
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            margin: 20px auto;
+            width: 300px;
+            padding: 20px;
+            border: 2px solid #007BFF;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #007BFF;
+            font-weight: bold;
+        }
+        input[type="file"] {
+            width: 85%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #007BFF;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Classification</h1>
+    <form method="POST" enctype="multipart/form-data" action="/predict">
+        <h2>Choose an Image File</h2>
+        <input type="file" name="file" accept=".png, .jpg, .jpeg">
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
